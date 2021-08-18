@@ -1,4 +1,4 @@
-'use strict';  //바닐라 자바스크립트 유용
+'use strict';  //바닐라 자바스크립트 유용..
 //variable 변수 변경될 수 있는 값
 //변수 선언 키워드 let
 //var (don't ever use this! / 쓰지마)
