@@ -8,11 +8,30 @@
 //블럭스콥이 없다 (블럭을 철저히 무시함)
 
 //variable types
-//primitive, single item(더 이상 작은 단위로 나눌수 없는 한가지 아이템)
+//primitive(값 자체가 메모리에 저장), single item(더 이상 작은 단위로 나눌수 없는 한가지 아이템)
 //:number, string, boolean, null, undefiedn, symbol
-//object(single item들을 여려게 묶어서 한 박스로 관리), box container
+//object(single item들을 여려게 묶어서 한 박스로 관리)/ object를 가리키는 레퍼런스가 메모리에 저장됨, box container
 //function(데이터 타입중 한개) , first-class function(다른 데이터 타입처럼 변수에 할당 가능/ 함수의 인자로도 전달이 됨/ 함수에서 return 타입으로도 function을 return 가능)
 
+//variable, rw(read/write) 메모리의 값을 읽고 쓰는게 가능 
+//let (added in ES6)
+let globalName = 'global name';
+{
+    let name = 'young';
+    console.log(name);
+    name = 'hello';
+    console.log(name);
+    console.log(globalName);
+}
+
+
+//constant, r(read only) 읽기만 가능 다른 값으로 쓰는 것 불가능
+//Immutable data types(변경불가 데이터 타입): primitive types, frozen objects (i.e. object.freeze())데이터 자체를 변경할 수 없음
+//Mutable data types(변경가능 데이터 타입): all object by default are mutable in JS
+//값을 한번 할당하면 절대 바뀌지 않는다 
+//- secruity
+//- thread safety
+//- reduce human mistakes (사람의 실수를 줄임)
 const count = 17; //integer(정수)
 const size = 17.1; //decimal number(소숫점 숫자)
 
